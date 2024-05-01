@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var a = [1,2,3,4,5,6,7,8,9,10,11]
+    var b = [1,2,2,4,5,6,5,8,9,3,2]
+    var count = 0
+    console.log(a)
+    console.log(a.length)
+    console.log(a.length/2 , "div")
+    // var center = a.
+    //3
+    for (let index = a.length-1; index >= a.length/2; index--) {
+        // const element = array[index];
+        var number;
+        console.log(a[index]) //5 // 4
+        console.log(a[count] , "count") //1 //2
+
+        number = a[count] //2
+        
+        a[count] = a[index] //
+        // [5,4,3,4,5]
+
+        a[index] = number
+        count++
+        // [5,2,3,2,1]
+        
+    }
+    console.log("hello console after")
+    console.log(a)
+
+
+    // [5,4,3,2,1]
+</script>
+<body>
+    Hello world
+</body>
+</html>

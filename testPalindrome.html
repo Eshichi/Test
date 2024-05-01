@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var a = "JR"
+    var word = a.split("")
+    var count = 0;
+    var checker = 0;
+    console.log(word)
+    // console.log(word.length)
+    for (let index = word.length-1; index >= word.length/2; index--) {
+        if(word[index].toLowerCase() == word[count].toLowerCase()){
+            checker++
+            if(checker ==  Math.floor(word.length/2))
+            {
+                console.log("palindrome")
+            }
+        }else{
+            console.log("NOT a palindrome")
+        }
+        count++
+        
+    }
+</script>
+<body>
+    Hello world
+</body>
+</html>
